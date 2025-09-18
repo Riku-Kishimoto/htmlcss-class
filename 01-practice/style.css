@@ -140,6 +140,11 @@ footer .menu {
     column-gap: 50px;
 }
 
+footer dl {
+    max-width: 370px;
+    display: inline-block;
+}
+
 footer .border::after {
     content: "";
     display: block;
