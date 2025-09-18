@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+body {
+    color: #1E1E1E;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.inner {
+    width: 86.48%;
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* header--------------------------------------- */
+h1 {
+    margin: 40px 0;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* main----------------------------------------- */
+.mainvisual .inner {
+    background: url(./images/bg_main.png) no-repeat center center/cover;
+    padding: 240px 0 80px;
+}
+
+.mainvisual .text {
+    display: inline-block;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.discusssion {
+    margin: 100px 0;
+}
+
+.discusssion h2 {
+    margin: 0 0 50px;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.discusssion p {
+    margin: 20px 0;
+}
+
+.discusssion a {
+    background-color: #F5F5F5;
+    padding: 6px 12px;
+    margin-left: 10px;
+}
+
+.new {
+    position: relative;
+}
+
+.new-text {
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.first {
+    border-bottom: #DDDDDD 1px solid;
+    padding-bottom: 50px;
+}
+
+.post {
+    display: grid;
+    row-gap: 50px;
+}
+
+
+/* footer--------------------------------------- */
+
+footer {
+    color: #fff;
+    background-color: #000;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+footer section {
+    margin-bottom: 100px;
+}
+
+small {
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}
+
+
+@media (width >=640px) {
+    .inner {
+        width: 76.19%;
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mainvisual {
+        background: url(./images/bg_main.png) no-repeat center center/cover;
+        padding: 240px 0 80px;
+    }
+
+    .mainvisual .inner {
+        background: none;
+        padding: 0;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+    }
+
+    .first {
+        border-bottom: none;
+    }
+}
