@@ -43,6 +43,20 @@ h1 {
     padding: 40px;
 }
 
+.mainvisual .text h2 {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+
+.mainvisual .text p {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: demi-bold;
+}
+
 .discusssion {
     margin: 100px 0;
 }
@@ -56,6 +70,28 @@ h1 {
     text-align: center;
 }
 
+.discusssion h2::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #72C9F3;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.discusssion h2::after {
+    content: "";
+    display: block;
+    border-bottom: #000 1px solid;
+    width: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
 .discusssion p {
     margin: 20px 0;
 }
@@ -66,17 +102,18 @@ h1 {
     margin-left: 10px;
 }
 
-.new {
-    position: relative;
-}
+
 
 .new-text {
-    position: fixed;
-    z-index: 9999;
+    position: absolute;
+    top: -20px;
+    left: 0;
     background-color: #fff;
+    padding: 6px 10px;
 }
 
 .first {
+    position: relative;
     border-bottom: #DDDDDD 1px solid;
     padding-bottom: 50px;
 }
@@ -96,10 +133,22 @@ footer {
     text-align: center;
 }
 
-.menu {
+footer .menu {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 50px 300px;
+    text-align: left;
+    column-gap: 50px;
+}
 
+footer .border::after {
+    content: "";
+    display: block;
+    border-bottom: #FFFFFF 1px solid;
+    width: 370px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer section {
