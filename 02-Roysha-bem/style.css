@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+body {
+    color: #6C6C6F;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 共通部分 ------------------------------------*/
+/* header */
+.header {
+    background-color: #123D88;
+    padding: 30px 0;
+}
+
+.header__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* footer */
+.footer {
+    color: #FFFFFF;
+    background-color: #123D88;
+    padding: 30px 0 50px;
+    text-align: right;
+}
+
+.footer__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer__copy {
+    font-size: 15px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #256BE6;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-align: center;
+    border-radius: 27.5px;
+}
+
+.btn--info {
+    background-color: #2DBE61;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+}
+
+.btn--outline {
+    border: 1px solid;
+    background-color: transparent;
+}
+
+.btn--q {
+    background-color: #F87624;
+}
+
+/* unit */
+.unit__catch {
+    margin-bottom: 20px;
+    color: #256BE6;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.unit__title {
+    margin-bottom: 40px;
+    color: #262934;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.unit__text p {
+    margin-bottom: 40px;
+}
+
+
+/* card */
+
+.card__icon {
+    margin-bottom: 40px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    color: #2F2F35;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* index.html ------------------------------------*/
+
+/* features */
+
+.features {
+    padding: 80px 0;
+}
+
+.features__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__info {
+    width: 46%;
+}
+
+.features__list {
+    width: 46%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 70px;
+}
+
+/* payment */
+
+.payment {
+    padding: 80px 0;
+    background-color: #f7faff;
+}
+
+.payment__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.payment__info {
+    width: 46%;
+}
+
+.payment__pic {
+    width: 46%;
+}
+
+/* service.html ------------------------------------*/
+/* wedo */
+.wedo {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.wedo__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wedo__info {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wedo__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 54px;
+    padding: 60px;
+    background-color: #F7FAFF;
+}
+
+.wedo__list .wedo__item {
+    padding: 40px;
+    background-color: #fff;
+}
+
+/* offer */
+.offer {
+    padding: 80px 0;
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+}
+
+.offer__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.offer__info {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.offer__info .unit__title {
+    color: #fff;
+}
+
+.offer__info .btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* help.html ------------------------------------*/
+/* transfer */
+.transfer {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.transfer__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.transfer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+}
+
+.transfer__info {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* question */
+.question {
+    padding: 80px 0;
+    background-color: #123D88;
+    color: #fff;
+    text-align: center;
+}
+
+.question__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.question__info {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.question__info .unit__title {
+    color: #fff;
+}
+
+.question__info .btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* asked */
+
+.asked {
+    padding: 80px 0;
+}
+
+.asked__inner {
+    width: 88%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.asked__info {
+    width: 46%;
+}
+
+.asked__list {
+    width: 46%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 70px;
+}
+
+.asked__item {
+    background-color: transparent;
+    padding: 40px 90px;
+    border: #6C6C6F 1px solid;
+    text-align: center;
+}
+
+.asked__item h3 {
+    color: #2F2F35;
+    font-size: 22px;
+    font-weight: bold;
+}

@@ -1,0 +1,59 @@
+@charset "utf8";
+
+body {
+    color: #888888;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 共通部分 --------------------*/
+.header {
+    margin: 30px 0 60px;
+    text-align: center;
+}
+
+.headerr__inner {
+    width: 90%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    color: #BBBBBB;
+    background-color: #202124;
+    padding: 100px 0 40px;
+    text-align: left;
+}
+
+.footer__inner {
+    width: 90%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    color: #202124;
+    font-size: 24px;
+}
+
+/* index.html ------------------------*/
+/* news */
+.news {
+    margin: 60px 0;
+}
+
+.news__inner {
+    width: 90%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
