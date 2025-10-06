@@ -1,0 +1,41 @@
+@use 'sass:math';
+
+$color-text: #31353B;
+$color-title: #000000;
+$color-main: #FF9900;
+$color-accent: #F85A47;
+$color-bg: #DBFFFF;
+
+$font-family-base: Helvetica, Arial, sans-serif;
+
+@mixin inner($w: percentage(math.div(1000, 1440)), $mw: 1000px) {
+    width: $w;
+    max-width: $mw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin global() {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+body {
+    color: $color-text;
+    font-size: 15px;
+    font-family: $font-family-base;
+    line-height: math.div(26, 15);
+    letter-spacing: #{math.div(20, 1000)}em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*共通部分------------------------------------*/
+/*header*/
+.header {}
