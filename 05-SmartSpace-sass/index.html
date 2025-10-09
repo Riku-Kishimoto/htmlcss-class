@@ -12,13 +12,13 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <h1>SmartSpace</h1>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
+            <h1 class="header__title"><a href="index.html">SmartSpace</a></h1>
+            <nav class="gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item gnav__item--active"><a href="index.html">Home</a></li>
+                    <li class="gnav__item "><a href="about.html">About</a></li>
+                    <li class="gnav__item"><a href="#">Service</a></li>
+                    <li class="gnav__item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,62 +27,71 @@
     <main class="main">
         <section class="residential">
             <div class="residential__inner">
-                <div class="post residential__list">
-                    <p class="post__tag">RESIDENTIAL & OFFICE SPACES</p>
-                    <h2 class="post__title">Smart Living Style
+                <div class="unit residential__list">
+                    <p class="unit__tag">RESIDENTIAL & OFFICE SPACES</p>
+                    <h2 class="unit__title">Smart Living Style
                         for Smart People</h2>
-                    <div class="post__content">
+                    <div class="unit__content">
                         <p>Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman
                             noisy match money rooms.</p>
                     </div>
                     <a href="#" class="btn">View All Property</a>
-                    <img class="post__pic" src="./images/pic_about01.png" alt="">
                 </div>
+                <div class="residential__pic"><img src="./images/pic_about01.png" alt=""></div>
             </div>
         </section>
         <section class="reviews">
             <div class="reviews__inner">
-                <p class="reviews__tag">CUSTOMER REVIEWS</p>
-                <h2 class="reviews__title">Loved by businesses,
-                    and individuals across the globe.</h2>
-                <article class="card reviews__list">
-                    <div class="card__content">
-                        <p>The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex
-                            drew six easy four dear cold</p>
-                    </div>
-                    <div class="card__prof">
-                        <img class="card__pic" src="./images/pic_testimonial01.png" alt="">
-                        <h3 class="card__title">Robert Fox</h3>
-                        <p class="card__adless">New York City, NY</p>
-                    </div>
-                </article>
-                <article class="card reviews__list">
-                    <div class="card__content">
-                        <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute
-                            and wandered vicinity
-                            property yet.</p>
-                    </div>
-                    <div class="card__prof">
-                        <img class="card__pic" src="./images/pic_testimonial02.png" alt="">
-                        <h3 class="card__title">Leslie Alexander</h3>
-                        <p class="card__adless">Buffalo, NJ</p>
-                    </div>
-                </article>
+                <div class="unit reviews__info">
+                    <p class="unit__tag">CUSTOMER REVIEWS</p>
+                    <h2 class="unit__title">Loved by businesses,<br>
+                        and individuals across the globe.</h2>
+                </div>
+                <div class="reviews__list">
+                    <article class="card reviews__item">
+                        <div class="card__content">
+                            <p>The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex
+                                drew six easy four dear cold</p>
+                        </div>
+                        <div class="card__customer">
+                            <img class="card__pic" src="./images/pic_testimonial01.png" alt="">
+                            <dl class="card__prof">
+                                <dt class="card__name">Robert Fox</dt>
+                                <dd class="card__addres">New York City, NY</dd>
+                            </dl>
+                        </div>
+                    </article>
+                    <article class="card reviews__item">
+                        <div class="card__content">
+                            <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling
+                                absolute
+                                and wandered vicinity
+                                property yet.</p>
+                        </div>
+                        <div class="card__customer">
+                            <img class="card__pic" src="./images/pic_testimonial02.png" alt="">
+                            <dl class="card__prof">
+                                <dt class="card__name">Leslie Alexander</dt>
+                                <dd class="card__addres">Buffalo, NJ</dd>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__inner">
-            <nav class="footer__nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
+            <nav class="gnav">
+                <ul class="gnav__list">
+                    <li class="gnav__item gnav__item--active"><a href="index.html">Home</a></li>
+                    <li class="gnav__item"><a href="about.html">About</a></li>
+                    <li class="gnav__item"><a href="#">Service</a></li>
+                    <li class="gnav__item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <small class="footer__small">© 2021 AR Shakir.</small>
+            <small class="footer__small">&copy; 2021 AR Shakir.</small>
         </div>
     </footer>
 
