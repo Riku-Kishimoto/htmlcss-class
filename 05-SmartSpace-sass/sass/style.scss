@@ -57,6 +57,10 @@ img {
         line-height: 1;
         letter-spacing: #{math.div(20,1000)}em;
     }
+
+    &__title:hover a {
+        color: $color-main;
+    }
 }
 
 .gnav {
@@ -67,6 +71,10 @@ img {
     }
 
     &__item--active a {
+        color: $color-main;
+    }
+
+    &__item:hover a {
         color: $color-main;
     }
 
@@ -127,6 +135,7 @@ img {
     border: 1px solid $color-border;
     border-radius: 20px;
     padding: 45px 40px;
+    display: grid;
 
     &__content {
         margin-bottom: 80px;

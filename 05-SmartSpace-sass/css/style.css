@@ -35,6 +35,9 @@ img {
   line-height: 1;
   letter-spacing: 0.02em;
 }
+.header__title:hover a {
+  color: #FF9900;
+}
 
 .gnav {
   font-weight: bold;
@@ -47,6 +50,9 @@ img {
        column-gap: 30px;
 }
 .gnav__item--active a {
+  color: #FF9900;
+}
+.gnav__item:hover a {
   color: #FF9900;
 }
 
@@ -99,6 +105,7 @@ img {
   border: 1px solid #A3A3A3;
   border-radius: 20px;
   padding: 45px 40px;
+  display: grid;
 }
 .card__content {
   margin-bottom: 80px;
