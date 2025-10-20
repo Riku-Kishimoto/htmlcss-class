@@ -104,6 +104,10 @@ img {
     &__item--hov {
         color: $color-ac;
     }
+
+    &__item:hover {
+        color: $color-ac;
+    }
 }
 
 /*footer*/

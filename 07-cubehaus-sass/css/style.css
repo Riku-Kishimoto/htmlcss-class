@@ -52,6 +52,9 @@ img {
 .gnav__item--hov {
   color: #E40065;
 }
+.gnav__item:hover {
+  color: #E40065;
+}
 
 /*footer*/
 .footer {
