@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*共通部分-----------------------------------------------------------------------------------------*/
 body {
   color: #000;
   font-size: 0.875rem;
@@ -13,7 +14,6 @@ img {
   vertical-align: middle;
 }
 
-/*共通部分-----------------------------------------------------------------------------------------*/
 .header {
   padding: 2.5rem 0;
 }
@@ -66,5 +66,159 @@ img {
   line-height: 1.6666666667;
 }
 
+.post__pic {
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+.post__title {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.7222222222;
+}
+.post--new .post__pic::after {
+  content: "NEW";
+  display: block;
+  position: absolute;
+  color: #FFFFFF;
+  background-color: #E40065;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 1.25rem;
+  bottom: 0.9375rem;
+  left: 0.9375rem;
+}
+
 /*index.html-----------------------------------------------------------------------------------------*/
+.mainvisual {
+  padding-bottom: 5rem;
+}
+.mainvisual__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.philosophy {
+  padding-bottom: 7.5rem;
+}
+.philosophy__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.philosophy__title {
+  margin-bottom: 3.75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6875;
+  text-align: center;
+}
+.philosophy__title::before {
+  content: "philosophy";
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.philosophy__title::after {
+  content: "";
+  border-bottom: #E40065 2px solid;
+  display: block;
+  margin: 1.5625rem auto 0;
+  width: 6.25rem;
+}
+.philosophy__text {
+  max-width: 48.75rem;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  row-gap: 3.75rem;
+}
+.philosophy__text p {
+  line-height: 2.4285714286;
+  overflow-wrap: anywhere;
+}
+@media (width >= 500px) {
+  .philosophy__text p {
+    word-break: keep-all;
+  }
+}
+
+.works {
+  padding-bottom: 7.5rem;
+}
+.works__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__title {
+  margin-bottom: 3.75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6875;
+  text-align: center;
+}
+.works__title::before {
+  content: "works";
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.works__title::after {
+  content: "";
+  border-bottom: #E40065 2px solid;
+  display: block;
+  margin: 1.5625rem auto 0;
+  width: 6.25rem;
+}
+.works__list {
+  display: grid;
+  row-gap: 3.75rem;
+}
+@media (width >= 640px) {
+  .works__list {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+}
+
+.voice__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.voice__title {
+  margin-bottom: 3.75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6875;
+  text-align: center;
+}
+.voice__title::before {
+  content: "voice";
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.voice__title::after {
+  content: "";
+  border-bottom: #E40065 2px solid;
+  display: block;
+  margin: 1.5625rem auto 0;
+  width: 6.25rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,8 @@ $font-family-mincho: "Times New Roman", Times, "Hiragino Mincho ProN", "Yu Minch
 // --- Breakpoints ---
 $breakpoints: (
     "tablet": 768px,
-    "desktop": 640px
+    "desktop": 640px,
+    "philosophy":500px,
 );
 
 
@@ -74,6 +75,34 @@ $breakpoints: (
     margin-right: auto;
 }
 
+@mixin main-title($sub: "") {
+    margin-bottom: rem(60);
+    font-size: rem(32);
+    font-weight: bold;
+    line-height: math.div(54, 32);
+    text-align: center;
+
+    &::before {
+        content: $sub;
+        display: block;
+        margin-bottom: rem(20);
+        font-size: rem(14);
+        font-weight: normal;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    &::after {
+        content: "";
+        border-bottom: $color-main 2px solid;
+        display: block;
+        margin: rem(25) auto 0;
+        width: rem(100);
+    }
+}
+
+/*共通部分-----------------------------------------------------------------------------------------*/
+
 body {
     color: $color-text;
     font-size: rem(14);
@@ -88,7 +117,6 @@ img {
     vertical-align: middle;
 }
 
-/*共通部分-----------------------------------------------------------------------------------------*/
 .header {
     padding: $space-xxl 0;
 
@@ -142,15 +170,107 @@ img {
     }
 }
 
+.post {
 
+    &__pic {
+        margin-bottom: rem(30);
+        position: relative;
+    }
 
+    &__title {
+        margin-bottom: rem(20);
+        font-size: rem(18);
+        font-weight: bold;
+        line-height: math.div(31, 18);
+    }
 
+    &--new &__pic::after {
+        content: "NEW";
+        display: block;
+        position: absolute;
+        color: #FFFFFF;
+        background-color: $color-main;
+        padding: rem(5) rem(15);
+        border-radius: rem(20);
+        bottom: rem(15);
+        left: rem(15);
 
+    }
+}
 
 /*index.html-----------------------------------------------------------------------------------------*/
 
+.mainvisual {
+    padding-bottom: rem(80);
+
+    &__inner {
+        @include inner();
+    }
+}
+
+.philosophy {
+    padding-bottom: $space-xxxxxl;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        @include main-title("philosophy");
+    }
+
+    &__text {
+        max-width: rem(780);
+        margin: auto;
+        text-align: center;
+        display: grid;
+        row-gap: rem(60);
+
+        p {
+            line-height: math.div(34, 14);
+            overflow-wrap: anywhere; //長いメールアドレスや単語の途中で改行
+
+            @include mq(philosophy) {
+                word-break: keep-all; //文脈の途中で改行しない
+            }
+        }
+    }
+}
+
+.works {
+    padding-bottom: $space-xxxxxl;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        @include main-title("works");
+    }
+
+    &__list {
+        display: grid;
+        row-gap: rem(60);
+
+        @include mq() {
+            grid-template-columns: 1fr 1fr;
+            column-gap: $space-xxxxl;
+        }
+    }
 
 
+}
+
+.voice {
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        @include main-title("voice");
+    }
+}
 
 
 

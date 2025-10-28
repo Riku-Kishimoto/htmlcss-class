@@ -25,11 +25,67 @@
     </header>
 
     <main class="main">
+
         <section class="mainvisual">
             <div class="mainvisual__inner">
-                <img src="./images/pic_main_lg.png" alt="" class="">
+                <picture class="mainvisual__pic">
+                    <source media="(width >= 640px)" srcset="./images/pic_main_lg.png">
+                    <source media="(width < 640px)" srcset="./images/pic_main_sm.png">
+                    <img src="./images/pic_main_lg.png" alt="CUBEHAUS=REMメインビジュアル">
+                </picture>
             </div>
         </section>
+
+        <section class="philosophy">
+            <div class="philosophy__inner">
+                <h2 class="philosophy__title">経営理念</h2>
+                <div class="philosophy__text">
+                    <p>日々の喧騒から解放される静かな空間で、
+                        自分らしい豊かな時間をお過ごしください。
+                        私たちが大切にしているのは、暮らしの本質を見つめ、
+                        家族との対話に心から集中できる、<wbr>
+                        洗練された「器」としての家をご提供することです。</p>
+
+                    <p>優れたデザインは、何気ない日常を
+                        より豊かで特別なものに変える力があります。<wbr>
+                        皆様の人生という物語の素敵な舞台となれることを、
+                        心より願っております。</p>
+
+                    <p>https://jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj.com
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <div class="works__inner">
+                <h2 class="works__title">制作実績</h2>
+                <div class="works__list">
+                    <article class="works__item post post--new">
+                        <div class="post__pic"><img src="./images/pic_works01.png" alt=""></div>
+                        <h3 class="post__title">光と風の抜ける家</h3>
+                        <div class="post__text">
+                            <p>白を基調としたミニマルな空間。大きな窓から光が差し込む、開放感あふれる住まい。</p>
+                        </div>
+                    </article>
+                    <article class="works__item post">
+                        <img class="post__pic" src="./images/pic_works02.png" alt="">
+                        <h3 class="post__title">空と繋がるコートハウス</h3>
+                        <div class="post__text">
+                            <p>プライバシーを守りながら、空を独り占めできる中庭。家族の時間が豊かになる設計。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="voice">
+            <div class="voice__inner">
+                <h2 class="voice__title">お客様の声</h2>
+
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
