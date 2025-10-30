@@ -20,8 +20,8 @@ img {
   width: 100%;
 }
 .header__inner {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 900px;
+  width: 87.5%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -52,8 +52,8 @@ img {
   color: #FFFFFF;
 }
 .footer__inner {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 900px;
+  width: 87.5%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,8 +95,8 @@ img {
   text-align: left;
 }
 .mainvisual__inner {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 900px;
+  width: 87.5%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -134,8 +134,8 @@ img {
   margin-bottom: 7.5rem;
 }
 .updates__inner {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 900px;
+  width: 87.5%;
   margin-left: auto;
   margin-right: auto;
 }

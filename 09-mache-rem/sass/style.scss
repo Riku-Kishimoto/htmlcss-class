@@ -66,7 +66,7 @@ $breakpoints: (
 // インナー幅の指定
 // @param {number} $mw - max-width
 // @param {number} $w  - width
-@mixin inner($mw: 1000px, $w: 90%) {
+@mixin inner($mw: 900px, $w: 87.5%) {
     max-width: $mw;
     width: $w;
     margin-left: auto;
