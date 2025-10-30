@@ -194,7 +194,30 @@ img {
         border-radius: rem(20);
         bottom: rem(15);
         left: rem(15);
+    }
+}
 
+.card {
+    display: grid;
+    grid-template-rows: subgrid; //内包するようその高さを揃える
+    grid-row: span 2; //内包する要素の数
+    row-gap: $space-xxl;
+    padding: rem(45) $space-xxl;
+    border: 1px solid #a3a3a3;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.profile {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    text-align: center;
+    // align-self: end; //領域内の下に揃える
+    column-gap: $space-m;
+
+    &__term {
+        font-weight: bold;
     }
 }
 
@@ -262,6 +285,8 @@ img {
 }
 
 .voice {
+    padding: $space-xxxxl $space-xxxxxl;
+    background-color: $color-bg;
 
     &__inner {
         @include inner();
@@ -269,6 +294,16 @@ img {
 
     &__title {
         @include main-title("voice");
+    }
+
+    &__list {
+        display: grid;
+        row-gap: rem(60);
+
+        @include mq() {
+            grid-template-columns: 1fr 1fr;
+            column-gap: $space-xxxxl;
+        }
     }
 }
 
